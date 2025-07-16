@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Lesson 5 Excercise: breakfast shop</title>
+    <link rel="shortcut icon" href="#">
+</head>
+    <h1>Breakfast shop: Calculate order price</h1>
+<body>
+    
+    <p>order: </p>
+    <button onclick="
+        price+=5;
+        order+= 'coffee ';
+        ">coffee($5)</button>
+    <button onclick="
+        price+=3;
+        order+= 'bagel ';
+        ">bagel($3)</button>
+    <button onclick="
+        price+=9;
+        order+= 'soup ';
+        ">soup($9)</button>
+    <br> <br>
+    <button onclick="
+        console.log(order);
+        ">Cart: </button>
+    <button onclick="
+        console.log(price*1.01); //final price with tax
+        ">Final Price: </button>
+</body>
+
+<script>
+    let price = 0;
+    let order =[];
+</script>
+</html>

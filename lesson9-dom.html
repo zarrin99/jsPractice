@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title> <!--Document object model-->
+
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <button>hello</button>
+    <button class="js-button">2nd button</button>
+    <!--DOM is a built in object-->
+    <script>
+
+        console.log(document.querySelector('button'));//document.querySelector gets any element from the page and shows here
+        document.querySelector('button')
+            .innerHTML = 'changed';
+
+        //console.log(document.querySelector('.js-button'));
+        // when we start with . -> class selector
+        const buttonElement = document.querySelector('.js-button');
+        console.log(buttonElement);
+
+        /*
+        console.log(document.title);
+        document.title = 'Changed';
+        
+        console.log(document.body); // this takes the entire body and puts it into js
+        console.log(typeof document.body); // when html is brought into js, the html is turned into an object
+
+        console.log(document.body.innerHTML); // gives the entire html body
+        document.body.innerHTML = '<button>good job</button>'; 
+        
+        document.body.innerHTML = 'hello';//removes everything in the html body and replaces it with 'hello'
+        // -----.----.---------
+        // built in object.property.property
+
+        document.title = 'Good Job';
+        //linked to webpage
+        */
+    </script>
+    
+</body>
+</html>

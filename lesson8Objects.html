@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <script>
+        /*
+        const product = { // product is the object
+            name: 'socks', //property value pair
+            price: 1090
+        };
+        console.log(product);
+        console.log(product.name); //.properties
+
+        product.name = 'cotton socks'; // change product property
+        console.log(product);
+
+        product.new = true;
+        console.log(product); //add new property to object
+
+        delete product.new; //delete property
+        console.log(product);
+
+        console.log(typeof product); //check data type
+        
+
+        const product2 = {
+            name: 'shirt',
+
+                rating:{ //nested objects
+                stars: 4.5,
+                count: 87
+            },
+            fun: function function1() {// we can have a function inside an object
+                console.log('function inside object');
+            }
+        };
+
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']); //guess when the property name has - or something that will confuse the computer
+        // [] allows not only string but other values
+
+        console.log(product2.rating.count);
+        product2.fun(); 
+
+        console.log(typeof console.log) // console was an object all along
+
+        console.log(JSON.stringify(product2)); //everything iside JSON looks like string
+        //JSON doesnt support functions, so we dont find function1 here ^
+        // used to send data between computers
+
+        const jsonString = JSON.stringify(product2);
+        const parse = JSON.parse(jsonString); //unJSONs it
+        console.log(parse);
+
+        */
+        console.log('hello'.length); //shows length property of hello
+        console.log('hello'.toUpperCase()); //method
+        //autoboxing: automatically wraps the string in an object like a box
+        // does not work with undefined or null
+
+        const object1 = {
+            message : 'hello'
+        }; // value message in in the computers memory, and the object1 is a reference to that memory
+        //objects are actually references
+        
+        object1.message = 'Good Job!';
+        console.log(object1); //we are able to change an object even tho its a constant
+        // that is because const just prevents the change of the location of the reference, we can still reach inside the location of reference and update the value.
+
+        const object2 = object1; // copy by reference, both point to the same location in the memory
+        
+        const object3 = {
+            message: 'Good Job!'
+        };
+
+        console.log(object3 === object1); //this shows false since here we are referencing different locations in memory, even tho the values are the same
+        console.log(object1 === object2);// true since the references are pointing at the same location
+
+        const object4 = {
+            message: 'Good Job!',
+            price: 799
+        };
+
+        //const message = object4.message; // takes out the value message and assigns it to variable
+        const { message, price } = object4; //shortcut, destructuring same thing as above
+
+        console.log(message);
+        console.log(price); // we can do it for multiple objects
+
+        const object5 = {
+            //shorthand property
+            //message: message //takes the variable message and puts in into object5
+            message, //if the variable and object property have the same name, we can just type it once. 
+            
+            //shorthand method
+            //method: function function1() {
+            //    console.log('method');
+            //}
+
+            method(){
+                console.log('method');
+            }
+        };
+
+        console.log(object5);
+        object5.method();
+    </script>
+    
+</body>
+</html>

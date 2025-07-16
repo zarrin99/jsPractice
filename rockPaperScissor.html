@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+
+    <h1>Rock Paper Scissor Game</h1>
+    <br>
+    <button onclick="
+        const random = Math.random();
+        let compMove = '';
+        
+        if (random >= 0 && random <(1/3)) {
+            compMove= 'rock'; // computer move
+        } else if(random>=(1/3) && random<(2/3)){
+            compMove= 'paper';
+        } else {
+            compMove= 'scissor';
+        }
+
+        console.log(compMove);
+
+        let result = '';
+
+        if (compMove === 'rock'){
+            result = 'tie';
+        } else if (compMove === 'paper'){
+            result = 'win';
+        } else if (compMove === 'scissor'){
+            result = 'lose';
+        }
+
+        alert(`You chose Rock and the compter chose ${compMove}. You ${result}.`);
+        ">Rock</button>
+    <button onclick="
+        const random = Math.random();
+        let compMove = '';
+        
+        if (random >= 0 && random <(1/3)) {
+            compMove= 'rock'; // computer move
+        } else if(random>=(1/3) && random<(2/3)){
+            compMove= 'paper';
+        } else {
+            compMove= 'scissor';
+        }
+
+        console.log(compMove);
+
+        let result = '';
+
+        if (compMove === 'rock'){
+            result = 'win';
+        } else if (compMove === 'paper'){
+            result = 'tie';
+        } else if (compMove === 'scissor'){
+            result = 'lose';
+        }
+
+        alert(`You chose Rock and the compter chose ${compMove}. You ${result}.`);
+        ">
+    Paper</button>
+    <button onclick="
+        const random = Math.random();
+        let compMove = '';
+        
+        if (random >= 0 && random <(1/3)) {
+            compMove= 'rock'; // computer move
+        } else if(random>=(1/3) && random<(2/3)){
+            compMove= 'paper';
+        } else {
+            compMove= 'scissor';
+        }
+
+        console.log(compMove);
+
+        let result = '';
+
+        if (compMove === 'rock'){
+            result = 'win';
+        } else if (compMove === 'paper'){
+            result = 'lose';
+        } else if (compMove === 'scissor'){
+            result = 'tie';
+        }
+
+        alert(`You chose Rock and the compter chose ${compMove}. You ${result}.`);
+        ">
+        Scissor</button>
+    <script></script>
+</body>
+</html>
