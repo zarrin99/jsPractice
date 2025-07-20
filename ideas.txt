@@ -1,0 +1,4 @@
+1. white and dark mode with a traditional switch 
+2. random topic generator for drawing games like scriblio - drawing board too maybe?
+3. dice - 3d animation - randomly chosse between 1 and 6
+4. pet that will follow your cursor on the webpage

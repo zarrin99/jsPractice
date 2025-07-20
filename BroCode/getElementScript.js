@@ -17,10 +17,12 @@ document.getElementById('mySubmit').onclick = function (){
      username = document.getElementById('myText').value;
      document.getElementById('myH1').textContent = `Hello ${username}`
 }
-
+/* 
 let age = window.prompt("How old are you");
 
-age = Number(age);
+age = Number(age); //type conversion
 age += 1;
 
-console.log(age, typeof age);
+console.log(age, typeof age); */
+
+
