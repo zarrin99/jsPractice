@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked Property</title>
+    <!--i just moved the css file here cause its too small, wanted to have fewer files-->
+    <style>
+        body{
+            font-size: 1em;
+        }
+        #mySubmit{
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox">Subscribe</label><br><br>
+    
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label><br>
+    <input type="radio" id="masterBtn" name="card">
+    <label for="masterBtn">MasterCard</label><br>
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn">Paypal</label><br><br>
+
+    <button type="submit" id="mySubmit">submit</button>
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+
+    <script src="checked.js"></script>
+</body>
+</html>

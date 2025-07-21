@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+</head>
+<body>
+    <script>
+        /*
+        let username = "Zarrin"
+        console.log(username.charAt(1));
+        console.log(username.indexOf("r")); // first occurance
+        console.log(username.length);
+
+        //username = username.trim(); // trims whitespace
+
+        username = username.toUpperCase();
+        console.log(username);
+
+        username = username.toLowerCase();
+        console.log(username);
+
+        let result = username.startsWith("a"); //case sensitive, if i want to use this ill have to reformat
+        console.log(result);
+        //endsWith();
+        //includes();
+
+        let phonenum = "123-456-789";
+        phonenum = phonenum.replaceAll("-", "#");
+        console.log(phonenum);
+        
+        let phoneNum = "123-456-789";
+        phoneNum = phoneNum.padStart(15, "0"); //make the string's length 15 with 0s at start
+        console.log(phoneNum);
+        //padEnd(...,...) */
+
+        //slice
+        const fullname = "Steven Universe"; 
+        /*
+        let firstName = fullname.slice(0,6); //end index of steven -> 5, +1
+        let lastName = fullname.slice(7, 15); //last index+1
+        console.log(firstName);
+        console.log(lastName);*/
+        /*
+        let range = fullname.indexOf(" "); //index of where the space is
+        console.log(range);
+        firstname = fullname.slice(0, range);
+        lastname = fullname.slice(range+1);
+        console.log(firstname);
+        console.log(lastname); */
+
+        const email = "zarrintasnim99@gmail.com";
+        let username = email.slice (0, email.indexOf("@"));
+        console.log(username);
+
+        //method chaining variable.function().function1().function2()
+    </script>
+</body>
+</html>
