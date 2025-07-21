@@ -8,9 +8,11 @@ submit.onclick = function (){
     max = document.getElementById('maxValue').value;
     //console.log(min);
     //console.log(max);
-
+    
+    min = Number(min);
+    max = Number (max);
     let random;
-    random = Math.floor( (Math.random() * max) + min );
+    random = Math.floor(Math.random() * (max - min)) + min;
     
     result.textContent = random;
     
