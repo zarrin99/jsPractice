@@ -1,0 +1,41 @@
+#container{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;   
+}
+button{
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(160, 86%, 80%);
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(160, 90%, 72%);
+}
+button:active{
+    background-color: hsl(160, 90%, 82%);
+}
+input{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+#diceResult{
+    margin: 25px;
+}
+
+/*it wasn't working earlier, according to deepseek maybe the images were larger than my div container so the display thing wasn't working*/
+#diceImages {
+  width: 100%; /* Let it expand to fit images */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#diceImages img {
+  width: 50px; /* Force images to a fixed size */
+}
