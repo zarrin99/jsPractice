@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructors</title>
+</head>
+<body>
+    <script>
+        //constructor = special method for defining the properties and methods of objects
+
+        function Car(make, model, year, color){
+            this.make = make,
+            this.model = model,
+            this.year = year,
+            this.color = color,
+            this.drive = function(){console.log(`You drive the ${this.model}`)}
+        }
+
+        const car1 = new Car("Ford", "Mustang", 2024, "red");
+        //our constructor method is reusable
+
+        car1.drive();
+
+        console.log(car1);
+    </script>
+</body>
+</html>
